@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone Monitor | SeaGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">🌊 SeaGuard</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="cyclone.html">Cyclone Monitor</a>
+        <a href="safety.html">Safety Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="section">
+    <h1>Cyclone & Storm Monitoring</h1>
+    <p class="subtitle">
+        Monitor weather indicators and consult official cyclone warnings.
+    </p>
+
+    <div class="warning">
+        <h3>⚠ Important</h3>
+        <p>
+            These weather readings do not confirm cyclone formation.
+            Refer to official IMD bulletins for cyclone tracking and alerts.
+        </p>
+    </div>
+
+    <h2 class="subheading">Current Weather Indicators</h2>
+
+    <div class="weather-grid">
+        <div class="weather-card">
+            <h3>Wind Speed</h3>
+            <h2 id="wind">-- km/h</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Wind Gusts</h3>
+            <h2 id="gusts">-- km/h</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Rainfall</h3>
+            <h2 id="rainfall">-- mm</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Cloud Cover</h3>
+            <h2 id="cloudCover">-- %</h2>
+        </div>
+    </div>
+
+    <h2 class="subheading">Official Warning Sources</h2>
+
+    <div class="feature-grid">
+        <a class="feature-card" href="https://mausam.imd.gov.in/" target="_blank" rel="noopener">
+            <h3>India Meteorological Department</h3>
+            <p>Weather forecasts and cyclone warnings.</p>
+        </a>
+
+        <a class="feature-card" href="https://rsmcnewdelhi.imd.gov.in/" target="_blank" rel="noopener">
+            <h3>RSMC New Delhi</h3>
+            <p>Tropical cyclone information.</p>
+        </a>
+
+        <a class="feature-card" href="https://incois.gov.in/" target="_blank" rel="noopener">
+            <h3>INCOIS</h3>
+            <p>Ocean and marine advisories.</p>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <h2>SeaGuard</h2>
+    <p>© 2026 SeaGuard</p>
+</footer>
+
+</body>
+</html>
