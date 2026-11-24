@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard | SeaGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">🌊 SeaGuard</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="cyclone.html">Cyclone Monitor</a>
+        <a href="safety.html">Safety Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="section">
+    <h1>Live Weather Dashboard</h1>
+    <p class="subtitle">Monitor coastal weather conditions.</p>
+
+    <form id="searchForm" class="search-box">
+        <input type="text" id="placeInput"
+               placeholder="Enter location" value="Rameswaram" required>
+        <button type="submit" class="btn">Search</button>
+    </form>
+
+    <p id="locationName" class="subtitle">Rameswaram, Tamil Nadu</p>
+    <p id="updatedAt" class="subtitle">Loading...</p>
+    <p id="errorMessage" class="error" hidden></p>
+
+    <div class="weather-grid">
+        <div class="weather-card">
+            <h3>Temperature</h3>
+            <h2 id="temperature">-- °C</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Feels Like</h3>
+            <h2 id="feelsLike">-- °C</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Wind Speed</h3>
+            <h2 id="wind">-- km/h</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Wind Gusts</h3>
+            <h2 id="gusts">-- km/h</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Humidity</h3>
+            <h2 id="humidity">-- %</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Rainfall</h3>
+            <h2 id="rainfall">-- mm</h2>
+        </div>
+    </div>
+
+    <h2 class="subheading">Marine Conditions</h2>
+    <div class="weather-grid">
+        <div class="weather-card">
+            <h3>Wave Height</h3>
+            <h2 id="waveHeight">-- m</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Wave Period</h3>
+            <h2 id="wavePeriod">-- s</h2>
+        </div>
+
+        <div class="weather-card">
+            <h3>Wave Direction</h3>
+            <h2 id="waveDirection">-- °</h2>
+        </div>
+    </div>
+
+    <h2 class="subheading">Hourly Forecast</h2>
+    <div id="hourlyForecast" class="forecast-grid">
+        Loading forecast...
+    </div>
+
+    <p class="api-credit">
+        Forecast data from Open-Meteo. Values are model estimates.
+    </p>
+</main>
+
+<footer>
+    <h2>SeaGuard</h2>
+    <p>© 2026 SeaGuard</p>
+</footer>
+
+</body>
+</html>
