@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SeaGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">🌊 SeaGuard</a>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="cyclone.html">Cyclone Monitor</a>
+        <a href="safety.html">Safety Guide</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="section">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Share your feedback and suggestions.</p>
+
+    <form id="contactForm" class="contact-form">
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Message</label>
+        <textarea id="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Prepare Email</button>
+    </form>
+
+    <p id="contactStatus" class="subtitle"></p>
+</main>
+
+<footer>
+    <h2>SeaGuard</h2>
+    <p>© 2026 SeaGuard</p>
+</footer>
+
+</body>
+</html>
